@@ -1,7 +1,7 @@
 .navbar{
     
   width: 100%;
-  height: 100px;
+  height: 80px;
   box-shadow: 0 5px 5px 0 rgba(0,0,0,.3);
   background: #1b263b;
   display:flex; 
@@ -26,7 +26,7 @@
 .navbar a{
     color : white;
     text-decoration: none;
-    font-size:28px;
+    font-size: 20px;
     font-weight: 300;
 }
    
@@ -43,37 +43,75 @@ body{
   background-color: #1b263b;
 }
 
-.wrapper{
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 200px;
-}
 
-h2{
-  font-size: 32px;
-  color: white
-}
 
-img{
-  width: 320px;
-  height: 440px;
-  border-radius: 20px;
-}
 
+
+@media screen and (min-width: 875px) {
+  img{
+    width: 320px;
+    height: 450px;
+    border-radius: 20px;
+  }
+  h2{
+    font-size: 32px;
+    color: white
+  }
+}
+@media screen and (max-width: 875px) {
+  img{
+    width: 260px;
+    height: 360px;
+    border-radius: 20px;
+  }
+  h2{
+    font-size: 24px;
+    color: white
+  }
+}
+@media screen and (min-width: 580px)  {
+  .wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8%;
+  }
+}
+@media screen and (max-width: 580px) {
+  img{
+    width: 180px;
+    height: 240px;
+    border-radius: 20px;
+  }
+  h2{
+    font-size: 24px;
+    color: white
+  }
+  .wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8%;
+    flex-direction: column;
+  }
+}
 .person{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
+.person a :hover{
+  opacity: 80%;
+}
 .footer{
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 40px;
-
+  padding: 14px;
 
   display: flex;
   align-items: center;
@@ -84,8 +122,8 @@ img{
 .footer img {
   margin: auto;
 
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 40px;
 }
 
