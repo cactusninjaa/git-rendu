@@ -88,3 +88,18 @@ img{
   height: 60px;
   border-radius: 40px;
 }
+
+@media screen and (max-width : 900px){
+
+  .navbar a{
+      font-size:18px;
+     
+  }
+}
+
+@media screen and (max-width : 680px){
+  .navbar a{
+      font-size:16px;
+     
+  }
+}
